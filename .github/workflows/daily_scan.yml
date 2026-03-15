@@ -1,17 +1,16 @@
 name: Daily Stock Scan
 on:
   schedule:
-    - cron: '0 21 * * *'
+    - cron: '30 19 * * *' # 19:30 UTC זה 21:30 בישראל
   workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Set up Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v4
         with:
           python-version: '3.9'
       - name: Install dependencies
