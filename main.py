@@ -4,8 +4,8 @@ import pandas as pd
 from datetime import datetime
 
 # הגדרות הבוט (וודא שהפרטים נכונים!)
-TOKEN = "הטוקן_שלך_כאן"
-CHAT_ID = "האיידי_שלך_כאן"
+TOKEN = "8684266181:AAFFV9UPlU-Xen3EBOJ1dN_BgNJH2u3e4OU"
+CHAT_ID = "448405777"
 
 def send_telegram_msg(message):
     url = f"https://api.telegram.org/bot{TOKEN}/sendMessage"
